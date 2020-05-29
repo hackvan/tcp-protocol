@@ -1,4 +1,4 @@
-# HTTP Basic Example inside the TCP Layer
+# HTTP basic examples inside the TCP layer
 
 These are examples with Node and Ruby for try to make and (very) basic HTTP server to return responses for HTTP/1.1 version.
 
@@ -14,23 +14,40 @@ ruby 2.6.3p62
 
 ## Run the Servers:
 
-### Javascript:
+### Javascript
 
 ```bash
 $ node node/index.js
 ```
 
-### Ruby:
+### Ruby
 
 ```bash
 $ ruby ruby/server.rb
 ```
 
-## Try with a Web Browser:
+## Try with:
 
-[http://localhost:3000](http://localhost:3000)
+- Web Browser
+
+  [http://localhost:3000](http://localhost:3000)
+
+- Telnet CLI
+  ```bash
+  $ telnet localhost 3000
+  Trying 127.0.0.1...
+  Connected to localhost.
+  Escape character is '^]'.
+  ```
+  Type in: `GET / HTTP/1.1`
+
+  Return:
+  ```bash
+  HTTP/1.1 200 OK
+
+  <h1>Hola Mundo</h1>Connection closed by foreign host.
+  ```
 
 ## Resources:
-[Make It Real - Tutorial](https://www.youtube.com/watch?v=rcrb-i86ohE)
-
-[Ruby Docs - Sockets](https://ruby-doc.org/stdlib-2.5.3/libdoc/socket/rdoc/TCPServer.html)
+1. [Make It Real - Tutorial](https://www.youtube.com/watch?v=rcrb-i86ohE)
+1. [Ruby Docs - Sockets](https://ruby-doc.org/stdlib-2.5.3/libdoc/socket/rdoc/TCPServer.html)
