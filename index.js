@@ -10,6 +10,11 @@ server.on("connection", socket => {
     data = data.toString().trim().toUpperCase();
     if (data === "PING") {
       socket.write(`PONG\n`);
+    } else if (data === "HOLA") {
+      socket.write(`HOLA\n`);
+    } else if (data === "CHAO") {
+      socket.write(`CHAO\n`);
+      socket.destroy();
     } else {
       socket.write(`WHAT\n`);
     }
