@@ -1,6 +1,6 @@
 # HTTP basic examples inside the TCP layer
 
-These are examples with Node and Ruby for try to make and (very) basic HTTP server to return responses for HTTP/1.1 version.
+These are examples with Node and Ruby for try to make a (very) basic HTTP server to return responses for the HTTP/1.1 protocol version.
 
 ## Requirements:
 
